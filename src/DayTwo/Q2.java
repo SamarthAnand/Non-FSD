@@ -8,8 +8,10 @@ public class Q2 {
         for(int i =0;i<n;i++){
 
             for(int j=0;j<n;j++){
-
-                    res[i][j] = a[i][j]*b[j][i];
+                for(int k =0;k<n;k++){
+                    res[i][j] += a[i][k]*b[k][i];
+                }
+                System.out.print(res[i][j]);
 
             }
 
